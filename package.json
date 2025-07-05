@@ -1,5 +1,5 @@
 {
-  "name": "pixel-dash",
+  "name": "nextjs-ts-template",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@10.12.4",
@@ -7,7 +7,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "format:eslint": "eslint --fix '**/*.ts*'"
+    "format": "eslint --fix '**/*.ts*'"
   },
   "dependencies": {
     "react": "^19.0.0",
