@@ -121,3 +121,13 @@
     width: 100%;
   }
 }
+
+/* Dark theme that works before React.js generates page
+ * You may need this in case of using
+ * static builds.
+ */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: oklch(0.145 0 0);
+    }
+}
