@@ -16,7 +16,7 @@ const compat = new FlatCompat({
 });
 
 export default defineConfig([
-    globalIgnores(['**/build/', 'test/fixtures/', '**/template/']),
+    globalIgnores(['**/build/', 'test/fixtures/', '**/template/', '.next/']),
     {
         extends: compat.extends(
             'eslint:recommended',
@@ -86,7 +86,7 @@ export default defineConfig([
             '@typescript-eslint/explicit-function-return-type': 'off',
             '@typescript-eslint/explicit-module-boundary-types': 'off',
             '@typescript-eslint/ban-types': 'off',
-            '@typescript-eslint/camelcase': 'off',
+            '@/camelcase': 'warn',
             'n/no-missing-import': 'off',
             'n/no-empty-function': 'off',
             'n/no-unsupported-features/es-syntax': 'off',
